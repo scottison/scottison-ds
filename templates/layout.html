@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<title>Scott Flask</title>
+<link rel=stylesheet type=text/css href={{ url_for('static', filename='style.css') }}
+<div class="page">
+<h1>Scott Ison</h1>
+<h2>Python Developer</h2>
+{% if name %}
+    <h3>hello {{ name }}</h3>
+{% else %}
+<h3>hello scott</h3>
+{% endif %}
+
+</div>
